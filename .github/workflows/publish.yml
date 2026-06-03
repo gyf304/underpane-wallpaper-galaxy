@@ -1,0 +1,23 @@
+name: Publish wallpaper
+
+on:
+  push:
+    tags:
+      - "*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: gyf304/underpane/actions/publish-wallpaper@main
+        with:
+          dist-dir: ./src
+          index-toml: ./src/index.toml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
