@@ -17,6 +17,7 @@ jobs:
 
       - uses: gyf304/underpane/actions/publish-wallpaper@main
         with:
+          name: galaxy
           dist-dir: ./src
           index-toml: ./src/index.toml
         env:

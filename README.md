@@ -7,7 +7,7 @@ Shader: [Stars and galaxy](https://www.shadertoy.com/view/stBcW1) by [mrange](ht
 ## Releasing
 
 Push a tag — the `.github/workflows/publish.yml` workflow builds and uploads a
-draft release containing `underpane-wallpaper-galaxy_<tag>.underpane.zip`.
+draft release containing `galaxy_<tag>.underpane.zip`.
 
 ```sh
 git tag v0.1.0
