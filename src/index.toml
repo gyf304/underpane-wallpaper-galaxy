@@ -1,4 +1,7 @@
 name = "Stars and Galaxy"
+description = "A starfield and a rotating galaxy. Adapted from a Shadertoy by mrange (CC0). https://www.shadertoy.com/view/stBcW1"
+author = "mrange"
+license = "CC0"
 
 [config.speed]
 type = "number"
